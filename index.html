@@ -24,7 +24,10 @@
             <h6 class="text-muted">Read the <a href="https://docs.yaproq.dev" target="_blank">documentation</a> for more info.</h6>
             <br />
             <a href="https://github.com/yaproq"><img src="github.png" alt="" width="36" height="36" /></a>
-            <p class="mt-4 text-muted">&copy; 2020-2021 Yaproq</p>
+            <p class="mt-4 text-muted">&copy; 2020-<span id="currentYear"></span> Yaproq</p>
         </div>
+        <script type="text/javascript">
+            document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+        </script>
     </body>
 </html>
